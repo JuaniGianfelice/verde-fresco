@@ -278,6 +278,7 @@ footer .footer-left .social a:hover{
 
 .nav-style {
   background-color: var(--main-color);
+ /**/
 }
 
 .products {
@@ -339,3 +340,122 @@ footer .footer-left .social a:hover{
 
 /* EStilos clase about*/
 
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.info-about {
+  margin-top: 50px;
+  width: 600px;
+  height: 300px;
+  
+}
+
+
+.carousel-container {
+    box-sizing: border-box;
+    position: relative;
+    width:70%; /* Ancho del carrusel */
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 300%; /* Ancho total del carrusel (3 imágenes) */
+    transition: transform 0.5s ease; /* Animación de desplazamiento */
+}
+
+.carousel-image {
+    width: 100%; /* Ajusta el tamaño de las imágenes */
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: #333;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#prevButton {
+    left: 10px;
+}
+
+#nextButton {
+    right: 10px;
+}
+
+.conteiner-article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.info-article {
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.info-article:last-child {
+    margin-bottom: 0;
+}
+
+.circle {
+    width: 3cm;
+    height: 3cm;
+    background-color: #555;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+}
+
+.info-article p {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 20px;
+}
+
+.info-article button {
+    display: block;
+    margin: 0 auto;
+}
+
+.info-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.info-product div:first-child {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.info-product div:last-child {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.info-product img {
+  max-width: 100%;
+  border-radius: 50px;
+  height: auto;
+}
